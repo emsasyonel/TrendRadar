@@ -1,37 +1,49 @@
-# --- KRİPTO PARA (Semboller + Çince) ---
+# --- KRİPTO PARA DEVLERİ ---
 BTC
 ETH
+SOL
 Bitcoin
-比特币
-以太坊
-+crypto
+Crypto
+Binance
++ETF
 
-# --- GLOBAL FİNANS & EMTİA ---
-# Çin haberlerinde Altın "黄金" olarak geçer
-Gold
+# --- DÖVİZ VE EMTİA (Para Piyasaları) ---
 XAU
-黄金
-# Dolar ve Faiz
+Gold
+Altın
 USD
+EUR
 Fed
-美联储
-# Yüzdelik değişim içeren her şeyi yakalar (Finans için en garanti yöntem)
-%
-$
+Faiz
+Rate
+Dollar
+Euro
 
-# --- TEKNOLOJİ HİSSELERİ ---
-Tesla
+# --- BÜYÜK HİSSELER (NASDAQ & S&P 500) ---
 TSLA
-特斯拉
-NVIDIA
+Tesla
 NVDA
-英伟达
-Apple
+NVIDIA
 AAPL
-苹果
+Apple
+MSFT
+Microsoft
+AMD
+Google
 
-# --- YAZILIM & İŞ (Çok sık çıkmaz ama kalsın) ---
+# --- YAZILIM DÜNYASI (Vue ve Diğerleri) ---
 Vue
 Vue.js
-Marble
-大理石
+React
+Python
+AI
+OpenAI
+GPT
+Gemini
+Release
+Framework
+
+# --- GENEL TETİKLEYİCİLER (Her şeyi yakalar) ---
+# Yüzdelik değişim ve Dolar işareti finans haberlerinin imzasıdır.
+%
+$
