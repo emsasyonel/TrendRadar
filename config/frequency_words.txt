@@ -1,24 +1,37 @@
-
-Bitcoin
+# --- KRİPTO PARA (Semboller + Çince) ---
 BTC
-Ethereum
 ETH
+Bitcoin
+比特币
+以太坊
 +crypto
 
+# --- GLOBAL FİNANS & EMTİA ---
+# Çin haberlerinde Altın "黄金" olarak geçer
+Gold
+XAU
+黄金
+# Dolar ve Faiz
+USD
+Fed
+美联储
+# Yüzdelik değişim içeren her şeyi yakalar (Finans için en garanti yöntem)
+%
+$
+
+# --- TEKNOLOJİ HİSSELERİ ---
 Tesla
 TSLA
+特斯拉
 NVIDIA
 NVDA
+英伟达
 Apple
 AAPL
-Microsoft
-MSFT
+苹果
 
-Gold
-Altın
-XAU
-Oil
-Petrol
-Fed
-Faiz
-+karar
+# --- YAZILIM & İŞ (Çok sık çıkmaz ama kalsın) ---
+Vue
+Vue.js
+Marble
+大理石
