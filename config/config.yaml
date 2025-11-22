@@ -15,7 +15,7 @@ crawler:
 # current: Anlık liste
 # incremental: Sadece yeni haberler (Borsa için önerilen)
 report:
-  mode: "incremental"
+  mode: "current"
   rank_threshold: 5
 
 notification:
