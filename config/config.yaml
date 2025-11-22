@@ -1,5 +1,5 @@
-# TrendRadar - ULTIMATE BORSA & YAZILIM MODU
-# Global Deney ve Finans Odaklı Ayarlar
+# TrendRadar - HYBRID MOD (Çin + Global)
+# Hem Çin'in hızını hem Batı'nın yazılımını kapsar.
 
 app:
   version_check_url: "https://raw.githubusercontent.com/sansan0/TrendRadar/refs/heads/master/version"
@@ -11,10 +11,11 @@ crawler:
   use_proxy: false
   default_proxy: "http://127.0.0.1:10086"
 
-# --- RAPOR MODU: TEST İÇİN "CURRENT" ---
-# Mesaj gelirse bunu sonra "incremental" yaparsın.
+# --- RAPOR MODU: ESKİ HALİNE (INCREMENTAL) GETİRİLDİ ---
+# Artık sadece YENİ haber düştüğünde mesaj atacak.
+# (Test bittiği için "current"tan vazgeçtik)
 report:
-  mode: "current"
+  mode: "incremental"
   rank_threshold: 5
 
 notification:
@@ -30,7 +31,7 @@ notification:
       start: "08:00"
       end: "23:00"
 
-  # Webhook Ayarları (GitHub Secrets'tan okur)
+  # Webhook Ayarları (GitHub Secrets'tan okur - BOŞ BIRAKILDI)
   webhooks:
     feishu_url: ""
     dingtalk_url: ""
@@ -50,29 +51,31 @@ weight:
   frequency_weight: 0.3
   hotness_weight: 0.2
 
-# --- DEV PLATFORM LİSTESİ ---
+# --- KARMA PLATFORM LİSTESİ (ÇİN + GLOBAL) ---
 platforms:
-  # 1. Wallstreetcn (Global Finansın Kalbi - ABD/Çin/Kripto)
-  # Buradan BTC, Tesla, Fed faiz kararları akar.
+  # --- 🇨🇳 ÇİN DEVLERİ (Hız ve Hacim) ---
+  # 1. Wallstreetcn: Çin'in Bloomberg'i. Finans/Kripto için en hızlısı.
   - id: "wallstreetcn-hot"
-    name: "WallSt-Global"
+    name: "Çin-Finans(WS)"
 
-  # 2. Cailian Press (CLS) - (Reuters'ın Çin versiyonu gibidir, çok hızlıdır)
+  # 2. Cailian Press: Reuters benzeri flaş haber servisi.
   - id: "cls-hot"
-    name: "Finans-Flaş"
+    name: "Çin-Flaş(CLS)"
 
-  # 3. Hacker News (Silikon Vadisi / Yazılımın Kalbi - İNGİLİZCE ŞANSIMIZ)
-  - id: "hackernews"
-    name: "HackerNews-USA"
+  # 3. Baidu Hot Search: Çin'in Google'ı. En büyük genel trendler burada.
+  # (Buradan genel dünya gündemi çok hızlı düşer)
+  - id: "baidu"
+    name: "Baidu-Genel"
 
-  # 4. GitHub Trending (Yazılım Trendleri)
-  - id: "github-trending"
-    name: "GitHub-Trends"
-
-  # 5. 36Kr (Teknoloji Yatırımları ve Startup)
+  # 4. 36Kr: Çin'in TechCrunch'ı. Teknoloji ve Girişimcilik.
   - id: "36kr"
-    name: "Tech-Startup"
+    name: "Çin-Tech(36Kr)"
 
-  # 6. ItHome (Teknoloji ve Donanım Haberleri)
-  - id: "ithome"
-    name: "IT-News"
+  # --- 🇺🇸 GLOBAL / İNGİLİZCE (Yazılım ve Batı) ---
+  # 5. Hacker News: Silikon Vadisi ve Yazılım dünyasının kalbi. (İngilizce)
+  - id: "hackernews"
+    name: "USA-HackerNews"
+
+  # 6. GitHub Trending: Yazılım kütüphaneleri için. (Global)
+  - id: "github-trending"
+    name: "Global-GitHub"
